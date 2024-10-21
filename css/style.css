@@ -1,0 +1,407 @@
+:root {
+    --mainColor : #252734;
+    --secondaryColor : #333646;
+    --acsentColor : #49BEB6;
+
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+
+section h1 {
+    color : #fff;
+    font: size 2.5rem;
+}
+
+
+
+/* navbar */
+
+.nav-link.active {
+    color: var(--acsentColor) !important;
+    font-weight: 700;
+}
+
+
+/* end navbar/
+
+/* Section hero */
+
+.color-acsent {
+    color: var(--acsentColor)
+}
+
+#hero {
+    color: #fff;
+    min-height: 100vh;
+}
+
+
+#hero h1{
+    font-size: 3rem;
+}
+
+
+#hero h2{
+    font-weight: 300;
+}
+
+
+#hero p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+
+/* END section hero */
+
+
+/* CTA */
+
+
+.btn-custom1 {
+    background-color: var(--acsentColor);
+    text-align: center;
+    color: #fff;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+.btn-custom1:hover{
+    box-shadow: 0 0 5px rgba(0, 238, 255, 0.9);
+}
+
+
+/* END CTA */
+
+.cv {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.social-icon svg{
+    margin-right: 0.2em;
+    margin-bottom: 7px;
+}
+
+/* About */
+
+hr {
+    width: 35%;
+    height: 5px;
+    color: var(--acsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+#about  { 
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: 80px;
+    margin-left: auto;
+}
+/* end about */
+
+
+/* skill */
+
+#skill {
+    min-height: 600px;
+    width: 100%;
+    color: #fff;
+}
+
+#skill img {
+    width: 12%;
+    margin: 10px;
+}
+
+/* end skill */
+
+/* RIWAYAT SEKOLAH LINETIME.DOT */
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.education {
+    padding: 100px 15px;
+    background-color: red;
+
+}
+
+.education h2 {
+    margin-bottom: 5rem;
+}
+
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before{
+content: "";
+position: absolute;
+width: 5px;
+height: 100%;
+background-color: white;
+left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.timeline-items:last-child{
+    margin-bottom: 0;
+
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: center;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+    height:  21px;
+    width: 21px;
+    background-color:;
+    box-shadow: 0 0 25px var(--acsentColor),
+                0 0 50px grey);
+position:absolute;
+position: absolute;
+left: calc(50% - 9px);
+border-radius: 50%;
+top: 10px;
+}
+
+.timeline-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+.timeline-content{
+    background-color: var(--mainColor);
+    border: 4px solid var(--acsentColor);
+    padding: 25px 150px ;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px grey;
+    cursor: pointer;
+    transition:  0.3s  ease-in-out;
+    
+}
+.timeline-container {
+    display: flex;
+    flex-direction: column; /* Mengatur elemen secara vertikal */
+    gap: 20px; /* Menyediakan jarak antar elemen secara konsisten */
+}
+
+.timeline-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--acsentColor);
+}
+
+.timeline-content h3{
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+}
+
+.timeline-content p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    white-space: nowrap;
+    margin: 0;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: beige;
+}
+::-webkit-scrollbar-track{
+    background-color: red;
+    width:50px;
+}
+
+#Education {
+color: white;
+}
+/* END */
+
+/* SERTIFIKAT */
+
+
+#sertifikat {
+    margin-top: 100px;
+    padding: 270px;
+    padding-bottom: 80px;
+    background-color: var(--secondaryColor);
+}
+
+
+#sertifikat p, a{
+    color: #fff;
+text-decoration: none;
+}
+
+#sertifikat img{
+    width: 49%;
+    padding: 10px;
+}
+
+/* end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
+
+#kontak {
+padding-top: 50px;
+}
+#contact {
+    padding: 10px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.contact-left {
+    justify-content: center;
+    align-items: center;
+}
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--mainColor);
+    border: 1px solid var(--acsentColor);
+    border-radius: 3px;
+    resize: none;
+    color: white;
+}
+
+.contact-form textarea::placeholder {
+    color: white;
+}
+
+.contact-form input::placeholder {
+    color: white;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--acsentColor);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: var(--acsentColor);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover{
+    background-color: var(--acsentColor);
+}
+
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: white;
+    padding-top: 10px;
+}
+
+.contact-item-icon {
+    background: var(--acsentColor);
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item-icon svg{
+    fill: white;
+}
+
+.contact-item-detail h4 {
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+}
+/* END */
+
+
+
+
+footer {
+    padding: 4rem 0;
+    background-color: var(--acsentColor);
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons {
+    fill: #3e3f40;
+}
